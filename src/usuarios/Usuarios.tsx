@@ -5,13 +5,13 @@ export const Usuarios = () => {
   return (
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Nombre address</Form.Label>
+        <Form.Label>Nombre</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
         <Form.Text className="text-muted"></Form.Text>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
+        <Form.Label>contraseña</Form.Label>
         <Form.Control type="password" placeholder="Password" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
