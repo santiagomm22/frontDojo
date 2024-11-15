@@ -1,20 +1,27 @@
-import { useState } from "react"
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 
 export const Usuarios = () => {
+  return (
+    <Form>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Email address</Form.Label>
+        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Text className="text-muted">
+          We'll never share your email with anyone else.
+        </Form.Text>
+      </Form.Group>
 
-    useState()
-
-    return (
-        <>
-            <div className="mb-3">
-                <label className="form-label">Email address</label>
-                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
-            </div>
-            <div className="mb-3">
-                <label className="form-label">Example textarea</label>
-                <textarea className="form-control" id="exampleFormControlTextarea1" ></textarea>
-            </div>
-        </>
-    )
-}
-
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>Password</Form.Label>
+        <Form.Control type="password" placeholder="Password" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+        <Form.Check type="checkbox" label="Check me out" />
+      </Form.Group>
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </Form>
+  );
+};
